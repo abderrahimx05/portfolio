@@ -1,29 +1,29 @@
 export const projectsData = [
   {
     id: 1,
-    title: "Casta",
+    title: "Casa Shop",
     date: "Janvier 2020",
-    languages: ["React", "Php", "Sass"],
+    languages: ["React", "Ecommerce.js", "Material UI"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-2.jpg",
+    img: "./assets/img/projet-2.png",
     link: "http://www.google.com",
   },
   {
     id: 2,
-    title: "Lyon Béton",
+    title: "Covid-19 Tracker",
     date: "Mars 2020",
-    languages: ["Symfony", "Vue"],
+    languages: ["React", "Material UI"],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
-    img: "./assets/img/projet-1.jpg",
+    img: "./assets/img/projet-1.png",
     link: "http://www.google.com",
   },
   {
     id: 3,
-    title: "Everpost",
+    title: "Netflix clone",
     date: "Avril 2020",
-    languages: ["Wordpress", "Php", "React"],
+    languages: ["React", "Firebase", ""],
     infos:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque labore suscipit, pariatur laboriosam autem omnis saepe quisquam enim iste.",
     img: "./assets/img/projet-3.jpg",

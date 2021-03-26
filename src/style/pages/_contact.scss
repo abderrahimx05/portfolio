@@ -228,12 +228,12 @@
         font-size: 1.5rem;
       }
     }
-    .email,
-    .phone {
-      @media screen and (max-height: 640px){
-        display: none;
-      }
-    }
+    // .email,
+    // .phone {
+    //   @media screen and (max-height: 640px){
+    //     display: none;
+    //   }
+    // }
     .email .content p,
     .phone .content p {
       transition: 0.25s;

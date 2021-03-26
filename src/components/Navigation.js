@@ -8,6 +8,14 @@ function Navigation() {
         <NavLink to="/" exact className="hover" activeClassName="nav-active">
           <li>accueil</li>
         </NavLink>
+        <NavLink
+          to="/about"
+          exact
+          className="hover"
+          activeClassName="nav-active"
+        >
+          <li>About</li>
+        </NavLink>
         <li className="nav-portfolio">
           Portfolio
           <ul className="nav-projects">

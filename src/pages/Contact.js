@@ -43,14 +43,14 @@ const Contact = () => {
           <div className="address">
             <div className="content">
               <h4>adresse</h4>
-              <p>12 rue du Code</p>
-              <p>33000 Bordeaux</p>
+              <p>l'hermitage</p>
+              <p>Casablanca</p>
             </div>
           </div>
           <div className="phone">
             <div className="content">
               <h4>téléphone</h4>
-              <CopyToClipboard text="0642844284" className="hover">
+              <CopyToClipboard text="0697823308" className="hover">
                 <p
                   style={{ cursor: "pointer" }}
                   className="clipboard"
@@ -58,7 +58,7 @@ const Contact = () => {
                     alert("Téléphone copié !");
                   }}
                 >
-                  06 42 84 42 84
+                  +212697823308
                 </p>
               </CopyToClipboard>
             </div>
@@ -66,7 +66,10 @@ const Contact = () => {
           <div className="email">
             <div className="content">
               <h4>email</h4>
-              <CopyToClipboard text="fsagency@gmail.com" className="hover">
+              <CopyToClipboard
+                text="abderrahim581@hotmail.com"
+                className="hover"
+              >
                 <p
                   style={{ cursor: "pointer" }}
                   className="clipboard"
@@ -74,17 +77,17 @@ const Contact = () => {
                     alert("Email copié !");
                   }}
                 >
-                  fsagency@gmail.com
+                  abderrahim581@hotmail.com
                 </p>
               </CopyToClipboard>
             </div>
           </div>
           <SocialNetwork />
           <div className="credits">
-            <p>fromScratch - 2020</p>
+            <p>abderrahim ait chraa 2021</p>
           </div>
         </div>
-        <ButtonsBottom left={"/projet-4"} />
+        <ButtonsBottom left={"/project-4"} />
       </motion.div>
     </main>
   );

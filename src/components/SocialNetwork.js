@@ -21,7 +21,7 @@ const SocialNetwork = () => {
     <div className="social-network">
       <ul className="content">
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/abderra.at.ch"
           target="_blank"
           rel="noopener noreferrer"
           className="hover"

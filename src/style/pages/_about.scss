@@ -7,7 +7,7 @@
     content: "";
     height: 900px;
     width: 900px;
-    background-image: url='https://media-exp1.licdn.com/dms/image/C5603AQHwe8ScoSupVA/profile-displayphoto-shrink_200_200/0/1580205171774?e=1622073600&v=beta&t=oUtVz5NJoqsvfx2wHsIIh2IsXAim5waOhL18dgDjXJ0';
+
     border-radius: 50%;
     position: absolute;
     bottom: -480px;
@@ -40,11 +40,32 @@
     justify-items: center;
     padding-left: 1rem;
     width: auto;
-    height: 60%;
+    height: 40%;
     overflow: hidden;
-
+    .image__about {
+      display: flex;
+      align-items: center;
+      padding: 4rem 2rem;
+      position: absolute;
+      @media screen and (max-width: 650px) {
+        display: block;
+      }
+    }
+    .image {
+      width: 20%;
+      height: 20%;
+      background-color: $color-3;
+      border-radius: 50%;
+      align-items: center;
+      @media screen and (max-width: 750px) {
+        width: 50%;
+        height: 50%;
+      }
+    }
     .about-content {
+      display: flex;
       user-select: none;
+      justify-content: center;
 
       h1 {
         font-size: 1.7rem;
@@ -86,15 +107,38 @@
           }
         }
       }
-      h2 {
-        font-size: .9rem;
+      h6 {
+        font-size: 0.9rem;
         font-weight: 100;
 
         @media screen and (max-width: 650px) {
           font-size: 1rem;
         }
         @media screen and (min-width: 1200px) {
-          font-size: 2rem;
+          font-size: 1rem;
+        }
+      }
+    }
+    .skills {
+      &__container {
+        row-gap: 2rem;
+      }
+      &__subtitle {
+        color: $color-2;
+        margin-bottom: 1.5rem;
+      }
+      &__name {
+        display: inline-block;
+        font-size: 0.875rem;
+        margin-right: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0.25rem 0.5rem;
+        background-color: $color-3;
+        border-radius: 0.25rem;
+
+        &:hover {
+          background-color: $color-2;
+          color: rgb(32, 5, 5);
         }
       }
     }

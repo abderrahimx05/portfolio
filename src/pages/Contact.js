@@ -42,20 +42,20 @@ const Contact = () => {
         <div className="contact-infos">
           <div className="address">
             <div className="content">
-              <h4>adresse</h4>
+              <h4>Address</h4>
               <p>l'hermitage</p>
               <p>Casablanca</p>
             </div>
           </div>
           <div className="phone">
             <div className="content">
-              <h4>téléphone</h4>
+              <h4>Phone</h4>
               <CopyToClipboard text="0697823308" className="hover">
                 <p
                   style={{ cursor: "pointer" }}
                   className="clipboard"
                   onClick={() => {
-                    alert("Téléphone copié !");
+                    alert("Phone copied !");
                   }}
                 >
                   +212697823308
@@ -65,7 +65,7 @@ const Contact = () => {
           </div>
           <div className="email">
             <div className="content">
-              <h4>email</h4>
+              <h4>Email</h4>
               <CopyToClipboard
                 text="abderrahim581@hotmail.com"
                 className="hover"
@@ -74,7 +74,7 @@ const Contact = () => {
                   style={{ cursor: "pointer" }}
                   className="clipboard"
                   onClick={() => {
-                    alert("Email copié !");
+                    alert("Email copied !");
                   }}
                 >
                   abderrahim581@hotmail.com
@@ -87,7 +87,7 @@ const Contact = () => {
             <p>abderrahim ait chraa 2021</p>
           </div>
         </div>
-        <ButtonsBottom left={"/project-4"} />
+        <ButtonsBottom left={"/project-3"} />
       </motion.div>
     </main>
   );

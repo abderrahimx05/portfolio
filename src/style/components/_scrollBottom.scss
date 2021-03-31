@@ -1,6 +1,6 @@
 .scroll-bottom {
   position: absolute;
-  bottom: 1rem;
+  bottom: 0.2rem;
   left: 50%;
   transform: translateX(-50%);
   color: $color-4;
@@ -14,7 +14,7 @@
   .sb-main {
     display: grid;
     grid-template-columns: 20px 100px 20px;
-    grid-template-areas: 'a b c';
+    grid-template-areas: "a b c";
     align-items: center;
     justify-items: center;
     width: 150px;
@@ -23,25 +23,21 @@
     transform-origin: bottom;
     pointer-events: none;
 
-    @media screen and (max-width: 430px){
-      transform: rotateX(0deg) scaleY(1);
-      width: 50px;
-    }
-    .left,
-    .right {
-      @media screen and (max-width: 430px){
-        transform: scale(2);
-      }
-    }
+    // @media screen and (max-width: 430px) {
+    //   transform: rotateX(0deg) scaleY(1);
+    //   width: 50px;
+    // }
+    // .left,
+    // .right {
+    //   @media screen and (max-width: 430px) {
+    //     transform: scale(2);
+    //   }
+    // }
     .left {
       grid-area: a;
     }
     p {
       grid-area: b;
-
-      @media screen and (max-width: 430px){
-        display: none;
-      }
     }
     .right {
       grid-area: c;
@@ -62,5 +58,9 @@
         font-size: 1.8rem;
       }
     }
+  }
+  @media screen and (max-width: 430px) {
+    margin-top: 4rem;
+    justify-content: center;
   }
 }

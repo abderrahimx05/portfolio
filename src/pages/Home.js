@@ -43,7 +43,7 @@ const Home = () => {
               onDragEnd
               dragConstraints={{
                 left: -250,
-                right: 950,
+                right: 550,
                 top: -200,
                 bottom: 250,
               }}
@@ -55,16 +55,20 @@ const Home = () => {
               onDragEnd
               dragConstraints={{
                 left: -250,
-                right: 1250,
+                right: 525,
                 top: -200,
                 bottom: 250,
               }}
             >
               <DynamicText />
+              <a href="https://abderahim.netlify.app/" target="_blank">
+                Check Resume .
+              </a>
             </motion.h2>
           </div>
         </div>
-        <ButtonsBottom right={"/project-1"} />
+
+        <ButtonsBottom right={"/about"} />
       </motion.div>
     </main>
   );

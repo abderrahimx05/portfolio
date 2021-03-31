@@ -63,7 +63,7 @@ const Project = (props) => {
     >
       <div className="project-content">
         <h1>{project.title}</h1>
-        <p>{project.date}</p>
+        {/* <p>{project.date}</p> */}
         <ul className="languages">
           {project.languages.map((item) => {
             return <li key={item}>{item}</li>;
@@ -91,7 +91,7 @@ const Project = (props) => {
             rel="noopener noreferrer"
             className="hover"
           >
-            <span className="button">voir le site</span>
+            <span className="button">Visit website</span>
           </a>
         </div>
       </motion.div>

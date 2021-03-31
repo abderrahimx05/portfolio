@@ -42,38 +42,47 @@ function About() {
 
               <div>
                 <h1>About</h1>
-                <h2>
+                <h4>
                   Hey ! my name is abderrahim ait chraa i have 23 years old and
-                  i'm junior web developer
-                </h2>
+                  i'm junior web developer . i start learn coding in platform of
+                  Udemy and Openclassrooms . i got more than 7 certifications in
+                  both platform that helped me to make many projects .
+                </h4>
+                <br />
+                <br />
+                <br />
+                <h3>
+                  <a href="https://abderahim.netlify.app/" target="_blank">
+                    Check Resume
+                  </a>
+                </h3>
               </div>
-              <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
 
-                <div class="skills__container bd-grid">
-                  <div class="skills__box">
-                    <h3 class="skills__subtitle">Development</h3>
-                    <span class="skills__name">Html</span>
-                    <span class="skills__name">Css</span>
-                    <span class="skills__name">Javascript</span>
-                    <span class="skills__name">Scss</span>
-                    <span class="skills__name">React</span>
-                    <span class="skills__name">Node</span>
+              <section className="skills" id="skills">
+                <h1 className="section-title">Skills</h1>
 
-                    <h3 class="skills__subtitle">Design</h3>
-                    <span class="skills__name">Figma</span>
-                    <span class="skills__name">Affinity</span>
-                  </div>
+                <div className="skills__container bd-grid">
+                  <div className="skills__box">
+                    <h2 className="skills__subtitle">Development</h2>
+                    <span className="skills__name">Html</span>
+                    <span className="skills__name">Css</span>
+                    <span className="skills__name">Javascript</span>
+                    <span className="skills__name">Scss</span>
+                    <span className="skills__name">React</span>
+                    <span className="skills__name">Node</span>
+                    <span className="skills__name">Python</span>
+                    <span className="skills__name">Git/Github</span>
 
-                  <div class="skills__img">
-                    <img src="assets/img/skill.jpg" alt="" />
+                    <h2 className="skills__subtitle">Design</h2>
+                    <span className="skills__name">Figma</span>
+                    <span className="skills__name">Affinity</span>
                   </div>
                 </div>
               </section>
+              <ButtonsBottom left={"/home"} right={"/project-1"} />
             </div>
           </div>
         </div>
-        <ButtonsBottom />
       </motion.div>
     </main>
   );

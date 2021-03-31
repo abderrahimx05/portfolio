@@ -1,13 +1,12 @@
 import React from "react";
 import { useState } from "react";
-
+import emailjs from "emailjs-com";
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const handleSubmit = (e) => {
     e.preventDefault();
     let nameS = document.getElementById("name");
@@ -33,7 +32,7 @@ const ContactForm = () => {
     };
 
     if (name && isEmail() && message) {
-      const templateId = "template_r0qjgd8";
+      const templateId = "service_jg58tvc";
 
       nameS.classList.remove("red");
       emailS.classList.remove("red");
@@ -47,7 +46,7 @@ const ContactForm = () => {
         message,
       });
     } else {
-      formMess.innerHTML = "Merci de remplir correctement les champs requis *";
+      formMess.innerHTML = "Please fill in the required fields correctly *";
       formMess.style.background = "rgb(253, 87, 87)";
       formMess.style.opacity = "1";
 
@@ -66,11 +65,11 @@ const ContactForm = () => {
   const sendFeedback = (templateId, variables) => {
     let formMess = document.querySelector(".form-message");
 
-    window.emailjs
+    emailjs
       .send("gmail", templateId, variables)
       .then((res) => {
         formMess.innerHTML =
-          "Message envoyé ! Nous vous recontacterons dès que possible.";
+          "Message sent ! We will recontact you as soon as possible.";
         formMess.style.background = "#00c1ec";
         formMess.style.opacity = "1";
 
@@ -89,14 +88,13 @@ const ContactForm = () => {
       })
       .catch(
         (err) =>
-          (formMess.innerHTML =
-            "Une erreur s'est produite, veuillez réessayer.")
+          (formMess.innerHTML = "An error has occurred. Please try again.")
       );
   };
 
   return (
     <form className="contact-form">
-      <h2>contactez-nous</h2>
+      <h2>Contact-us</h2>
       <div className="form-content">
         <input
           type="text"
@@ -112,7 +110,7 @@ const ContactForm = () => {
           id="company"
           name="company"
           onChange={(e) => setCompany(e.target.value)}
-          placeholder="société"
+          placeholder="company"
           value={company}
         />
         <input
@@ -120,11 +118,11 @@ const ContactForm = () => {
           id="phone"
           name="phone"
           onChange={(e) => setPhone(e.target.value)}
-          placeholder="téléphone"
+          placeholder="phone"
           value={phone}
         />
         <div className="email-content">
-          <label id="not-mail">Email non valide</label>
+          <label id="not-mail">Invalid email</label>
           <input
             type="mail"
             id="email"
@@ -147,7 +145,7 @@ const ContactForm = () => {
       <input
         className="button hover"
         type="submit"
-        value="envoyer"
+        value="Send"
         onClick={handleSubmit}
       />
       <div className="form-message"></div>

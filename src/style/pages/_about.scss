@@ -2,7 +2,10 @@
   height: 100vh;
   width: 100vw;
   position: absolute;
-
+  @media screen and (max-width: 400px) {
+    height: 120vh;
+    width: 100vw;
+  }
   &:after {
     content: "";
     height: 900px;
@@ -45,10 +48,18 @@
     .image__about {
       display: flex;
       align-items: center;
-      padding: 4rem 2rem;
+      padding: 3rem 2rem 2rem 3rem;
       position: absolute;
       @media screen and (max-width: 650px) {
         display: block;
+        padding: 2rem 2rem 3rem;
+      }
+      a {
+        font-size: 2rem;
+        color: $color-2;
+        background-color: $color-3;
+        border-radius: 20%;
+        text-justify: center;
       }
     }
     .image {
@@ -120,6 +131,8 @@
       }
     }
     .skills {
+      display: grid;
+      position: relative;
       &__container {
         row-gap: 2rem;
       }

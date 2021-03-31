@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "emailjs-com": "^2.6.3",
+    "emailjs-com": "^2.6.4",
     "framer-motion": "^2.1.4",
     "node-sass": "^5.0.0",
     "react": "^16.13.1",
@@ -17,7 +17,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": " react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

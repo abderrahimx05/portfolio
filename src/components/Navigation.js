@@ -6,7 +6,7 @@ function Navigation() {
     <div className="navigation">
       <ul>
         <NavLink to="/" exact className="hover" activeClassName="nav-active">
-          <li>accueil</li>
+          <li>Home</li>
         </NavLink>
         <NavLink
           to="/about"
@@ -40,13 +40,13 @@ function Navigation() {
             >
               <li>project-3</li>
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/project-4"
               activeClassName="nav-active"
               className="hover"
             >
               <li>project-4</li>
-            </NavLink>
+            </NavLink> */}
           </ul>
         </li>
         <NavLink

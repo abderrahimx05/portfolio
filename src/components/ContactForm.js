@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import emailjs from "emailjs-com";
+
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
@@ -32,7 +32,7 @@ const ContactForm = () => {
     };
 
     if (name && isEmail() && message) {
-      const templateId = "service_jg58tvc";
+      const templateId = "template_r0qjgd8";
 
       nameS.classList.remove("red");
       emailS.classList.remove("red");
@@ -62,11 +62,11 @@ const ContactForm = () => {
     }
   };
 
-  const sendFeedback = (templateId, variables) => {
+  const sendFeedback = (templateId, User, variables) => {
     let formMess = document.querySelector(".form-message");
 
-    emailjs
-      .send("gmail", templateId, variables)
+    window.emailjs
+      .send("service_jg58tvc", templateId, User, variables)
       .then((res) => {
         formMess.innerHTML =
           "Message sent ! We will recontact you as soon as possible.";
@@ -84,10 +84,10 @@ const ContactForm = () => {
 
         setTimeout(() => {
           formMess.style.opacity = "0";
-        }, 5000);
+        }, 2000);
       })
       .catch(
-        (err) =>
+        (error) =>
           (formMess.innerHTML = "An error has occurred. Please try again.")
       );
   };

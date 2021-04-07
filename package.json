@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "cjs": "^0.0.11",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^2.1.4",
     "node-sass": "^5.0.0",

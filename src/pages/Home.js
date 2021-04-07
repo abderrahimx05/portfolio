@@ -5,7 +5,6 @@ import ButtonsBottom from "../components/ButtonsBottom";
 import DynamicText from "../components/DynamicText";
 import Mouse from "../components/Mouse";
 import { motion } from "framer-motion";
-
 const Home = () => {
   const variants = {
     initial: {

@@ -41,22 +41,22 @@ export const Project3 = () => {
         <Navigation />
         <Logo />
         <Project projectNumber={2} />
-        <ButtonsBottom left={"/project-2"} right={"/contact"} />
+        <ButtonsBottom left={"/project-2"} right={"/project-4"} />
       </div>
     </main>
   );
 };
 
-// export const Project4 = () => {
-//   return (
-//     <main>
-//       <Mouse />
-//       <div className="project">
-//         <Navigation />
-//         <Logo />
-//         <Project projectNumber={3} />
-//         <ButtonsBottom left={"/project-3"} right={"/contact"} />
-//       </div>
-//     </main>
-//   );
-// };
+export const Project4 = () => {
+  return (
+    <main>
+      <Mouse />
+      <div className="project">
+        <Navigation />
+        <Logo />
+        <Project projectNumber={3} />
+        <ButtonsBottom left={"/project-3"} right={"/contact"} />
+      </div>
+    </main>
+  );
+};

@@ -51,6 +51,7 @@
         position: relative;
         font-family: $font-2;
         color: $black;
+        margin-top: 2.5rem;
 
         @media screen and (max-width: 650px) {
           font-size: 2rem;
@@ -101,7 +102,8 @@
         font-size: 2rem;
         color: $color-2;
         background-color: $color-3;
-        border-radius: 20%;
+        border-radius: 10%;
+        padding: 10px 10px;
         text-justify: center;
         @media screen and (max-width: 400px) {
           background-color: $color-1;

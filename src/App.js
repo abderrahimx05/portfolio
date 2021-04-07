@@ -9,7 +9,7 @@ import {
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import { Project1, Project2, Project3 } from "./pages/Projects";
+import { Project1, Project2, Project3, Project4 } from "./pages/Projects";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -51,12 +51,15 @@ function App() {
           wheelRouter("project-3", "project-1");
           break;
         case url + "project-3":
-          wheelRouter("contact", "project-2");
+          wheelRouter("project-4", "project-2");
+          break;
+        case url + "project-4":
+          wheelRouter("contact", "project-3");
           break;
         case url + "contact":
           if (e.wheelDeltaY > 0) {
             setTimeout(() => {
-              history.push("project-3");
+              history.push("project-4");
             }, 500);
           }
           break;
@@ -73,7 +76,7 @@ function App() {
       <Route exact path="/project-1" component={Project1} />
       <Route exact path="/project-2" component={Project2} />
       <Route exact path="/project-3" component={Project3} />
-      {/* <Route exact path="/project-4" component={Project4} /> */}
+      <Route exact path="/project-4" component={Project4} />
       <Route exact path="/contact" component={Contact} />
       <Redirect to="/" />
     </Switch>

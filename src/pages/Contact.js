@@ -87,7 +87,7 @@ const Contact = () => {
             <p>abderrahim ait chraa 2021</p>
           </div>
         </div>
-        <ButtonsBottom left={"/project-3"} />
+        <ButtonsBottom left={"/project-4"} />
       </motion.div>
     </main>
   );

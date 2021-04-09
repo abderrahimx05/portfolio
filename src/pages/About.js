@@ -34,6 +34,7 @@ function About() {
         variants={variants}
       >
         <Navigation />
+
         <SocialNetwork />
         <div className="about-main">
           <div className="about-content">
@@ -42,6 +43,7 @@ function About() {
 
               <div>
                 <h1>About</h1>
+
                 <h4>
                   Hey ! my name is abderrahim ait chraa i have 23 years old and
                   i'm junior web developer . i start learn coding in platform of
